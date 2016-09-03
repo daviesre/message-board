@@ -8,8 +8,8 @@ export default Ember.Component.extend({
     },
     update(answer) {
       var params = {
-        owner: this.get('content'),
-        city: this.get('author'),
+        content: this.get('content'),
+        author: this.get('author'),
       };
       this.set('updateAnswerForm', false);
       this.sendAction('update', answer, params);

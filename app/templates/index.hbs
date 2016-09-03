@@ -6,7 +6,7 @@ On this site, you may ask any question you wish and receive answers from people 
 
 <ul>
   {{#each model.questions as |question|}}
-  <li>{{#link-to 'question' question.id}}{{question.content}} {{question.author}}{{/link-to}}</li>
+  <li>{{#link-to 'question' question.id}}{{question.content}} By: {{question.author}}{{/link-to}}</li>
   {{/each}}
 </ul>
 
