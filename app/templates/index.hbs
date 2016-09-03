@@ -1,0 +1,19 @@
+<h1> Welcome to Blahoo Answer! </h1>
+
+On this site, you may ask any question you wish and receive answers from people around the world.
+
+<h2>Current Questions:</h2>
+
+<ul>
+  {{#each model.questions as |question|}}
+  <li>{{#link-to 'question' question.id}}{{question.content}} {{question.author}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+{{new-question saveQuestion="saveQuestion"}}
+
+<hr>
+
+{{#link-to 'about'}}About{{/link-to}}
+<br>
+{{#link-to 'contact'}}Contact Us{{/link-to}}
