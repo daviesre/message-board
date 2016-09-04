@@ -1,1 +1,9 @@
-{{yield}}
+By: {{question.author}}
+{{question.content }}
+{{question.notes}}
+
+{{#each question.answers as |answer|}}
+<ul>
+  <li>{{answer.content}} By: {{answer.author}}</li>
+</ul>
+{{/each}}
