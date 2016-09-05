@@ -2,16 +2,23 @@ body {
   text-align:center;
 }
 
+.title-fix {
+  margin-top:100px;
+}
+
 .forum-block {
   display: block;
- text-decoration: none;
- font-size: 1.3em;
- line-height: 2.5;
- background-image: rgba(0,0,0,0.25);
- border: 2px solid black;
- text-shadow: 1px 1px 1px black;
+  text-decoration: none;
+  font-size: 1.3em;
+  line-height: 2.5;
+  background-image: rgba(0,0,0,0.25);
+  border: 2px solid black;
 }
 
 .display-none {
   visibility:hidden;
+}
+
+.move-button {
+  margin-bottom: 100px;
 }

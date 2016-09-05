@@ -1,9 +1,14 @@
-<strong>{{question.content }}</strong>
-"{{question.notes}}"
-By: {{question.author}}
+<div class="forum-block title-fix">
+  <h1>Q: {{question.content}}</h1>
+  <p>"{{question.notes}}"</p>
+  User: {{question.author}}
+</div>
+
 
 {{#each question.answers as |answer|}}
 <ul>
-  <li>{{answer.content}} By: {{answer.author}}</li>
+  <li class="display-none"></li>
+  <li class="forum-block">{{answer.content}} <br> Username: {{answer.author}}</li>
+  <li class="display-none"></li>
 </ul>
 {{/each}}

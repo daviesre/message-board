@@ -3,20 +3,20 @@
   <div>
     <form>
       <div class="form-group">
-        <label for="content">Question:</label>
+        <label for="content">Title:</label>
         {{input value=content id="content"}}
       </div>
       <div class="form-group">
-        <label for="notes">Notes: </label>
+        <label for="notes">Question: </label>
         {{input value=notes id="notes"}}
       </div>
       <div class="form-group">
-        <label for="author">Author:</label>
+        <label for="author">Username:</label>
         {{input value=author id="author"}}
       </div>
-      <button class="btn btn-primary"{{action 'saveQuestion'}}>Save</button>
+      <button class="btn btn-primary move-button"{{action 'saveQuestion'}}>Save</button>
     </form>
   </div>
 {{else}}
-  <button class="btn btn-primary" {{action 'questionFormShow'}}>Ask a Question</button>
+  <button class="btn btn-lg btn-primary move-button" {{action 'questionFormShow'}}>Ask a Question</button>
 {{/if}}

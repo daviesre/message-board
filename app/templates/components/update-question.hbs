@@ -3,24 +3,23 @@
   <div>
     <form>
       <div class="form-group">
-        <label for="content">Question:</label>
+        <label for="content">Title:</label>
         {{input value=content id="content" placeholder=question.content}}
       </div>
 
       <div class="form-group">
-        <label for="notes">Additional Notes:</label>
+        <label for="notes">Question:</label>
         {{input value=notes id="notes" placeholder=question.notes}}
       </div>
 
       <div class="form-group">
-        <label for="author">Author:</label>
+        <label for="author">Username:</label>
         {{input value=author id="author" placeholder=question.author}}
       </div>
 
-
-      <button class="btn btn-success" {{action 'updateQuestion' question}}>Save</button>
+      <button {{action 'updateQuestion' question}}>Save</button>
     </form>
   </div>
 {{else}}
-  <button class="btn btn-success"{{action 'updateQuestionForm'}}>Edit Question</button>
+  <button {{action 'updateQuestionForm'}}>Edit Question</button>
 {{/if}}

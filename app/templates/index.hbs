@@ -1,4 +1,4 @@
-<h1> Welcome to Blahoo Answers! </h1>
+<h1 class="title-fix"> Welcome to Blahoo Answers! </h1>
 
 On this site, you may ask any question you wish and receive answers from people around the world.
 
@@ -6,7 +6,8 @@ On this site, you may ask any question you wish and receive answers from people 
 
 <ul>
   {{#each model.questions as |question|}}
-  <li class="forum-block">{{#link-to 'question' question.id}}{{question.content}} Asked By: {{question.author}}{{/link-to}}</li>
+  <li class="display-none"></li>
+  <li class="forum-block">{{#link-to 'question' question.id}}{{question.content}}{{/link-to}} <br> Username: {{question.author}}</li>
   <li class="display-none"></li>
   {{/each}}
 </ul>
