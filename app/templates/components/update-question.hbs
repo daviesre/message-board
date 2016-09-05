@@ -18,9 +18,9 @@
       </div>
 
 
-      <button {{action 'updateQuestion' question}}>Save</button>
+      <button class="btn btn-success" {{action 'updateQuestion' question}}>Save</button>
     </form>
   </div>
 {{else}}
-  <button {{action 'updateQuestionForm'}}>Update</button>
+  <button class="btn btn-success"{{action 'updateQuestionForm'}}>Edit Question</button>
 {{/if}}
