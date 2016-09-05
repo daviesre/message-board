@@ -1,7 +1,7 @@
 {{#if addNewAnswer}}
-  <h1>New Answer</h1>
   <div>
-    <form>
+    <form class="title-fix">
+      <h1>New Answer</h1>
       <div class="form-group">
         <label for="content">Your Answer:</label>
         {{input value=content id="content"}}
@@ -12,9 +12,9 @@
         {{input value=author id="author"}}
       </div>
 
-      <button class="btn btn-success" {{action 'save1'}}>Save</button>
+      <button class="btn btn-primary button" {{action 'save1'}}>Save</button>
     </form>
   </div>
 {{else}}
-  <button class="btn btn-success"{{action 'answerFormShow'}}>Answer Question</button>
+  <button class="btn btn-primary btn-lg title-fix move-button"{{action 'answerFormShow'}}>Answer Question</button>
 {{/if}}
