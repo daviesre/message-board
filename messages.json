@@ -1,15 +1,15 @@
 { "questions": [{
     "content": "What is the best game to buy?",
     "author": "Bob Smith",
-    "notes": "Wanting to know about games in general"
+    "note": "Wanting to know about games in general"
   }, {
     "content": "Where is the Space Needle?",
     "author": "Mary Smith",
-    "notes": "Is it in the USA?"
+    "note": "Is it in the USA?"
   }, {
     "content": "What is the best coffee to drink?",
     "author": "Joe Shoe",
-    "notes": "I'm not sure where to go for coffee."
+    "note": "I'm not sure where to go for coffee."
   }],
   "answers": [{
     "author": "Nancy Razor",

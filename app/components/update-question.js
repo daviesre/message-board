@@ -13,7 +13,7 @@ export default Ember.Component.extend({
     },
     updateQuestion(question){
       var params={
-        title:this.get('title'),
+        note:this.get('note'),
         author:this.get('author'),
         content:this.get('content')
       };
