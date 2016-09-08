@@ -4,7 +4,7 @@ On this site, you may ask any question you wish and receive answers from people 
 
 <h2>Current Questions:</h2>
 
-<ul>
+<ul class="container">
   {{#each model.questions as |question|}}
   <li class="display-none"></li>
   <li class="forum-block">{{#link-to 'question' question.id}}{{question.content}}{{/link-to}} <br> Username: {{question.author}}</li>
