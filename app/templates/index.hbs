@@ -7,9 +7,11 @@ On this site, you may ask any question you wish and receive answers from people 
 <ul class="container">
   {{#each model.questions as |question|}}
     <li class="display-none"></li>
-    <li class="forum-block">{{question-popularity question}} {{#link-to 'question' question.id}}{{question.content}}{{/link-to}} <br> Username: {{question.author}}</li>
+    <li class="forum-block">{{#link-to 'question' question.id}}{{question.content}}{{/link-to}} ({{question-popularity question}}) <br> Username: {{question.author}}</li>
     <li class="display-none"></li>
   {{/each}}
 </ul>
 
 {{new-question saveQuestion="saveQuestion"}}
+
+{{display-favorites}}

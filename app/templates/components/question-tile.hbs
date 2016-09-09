@@ -2,13 +2,15 @@
   <h1>Q: {{question.content}}</h1>
   "{{question.note}}" <br>
   Username: {{question.author}}
+  <button class="btn btn-warning"{{action 'addToFavorites' question}}>Favorite</button>
 </div>
 
 
 {{#each question.answers as |answer|}}
 <ul>
   <li class="display-none"></li>
-  <li class="forum-block"><strong>A: {{answer.content}}</strong> <br> Username: {{answer.author}}</li>
+  <li class="forum-block"><strong>A: {{answer.content}}</strong>
+<br> Username: {{answer.author}}</li>
   <li class="display-none"></li>
 </ul>
 {{/each}}
