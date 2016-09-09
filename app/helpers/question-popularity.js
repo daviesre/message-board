@@ -3,10 +3,10 @@ import Ember from 'ember';
 export function questionPopularity(params) {
   var question = params[0];
 
-  if(question.get('answers').get('length') >= 2) {
-    return Ember.String.htmlSafe('<span class="glyphicon glyphicon-fire">Hot!</span>');
-  } else if(question.get('answers').get('length') === 0) {
-    return Ember.String.htmlSafe('<span class="glyphicon glyphicon-remove">No</span>');
+  if(question.get('answers').get('length') === 1) {
+    return question.get('answers').get('length') + " answer";
+  } else {
+    return question.get('answers').get('length') + " answers";
   }
 }
 
