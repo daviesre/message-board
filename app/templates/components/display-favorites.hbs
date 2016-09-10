@@ -1,3 +1,11 @@
-{{#each favoriteQuestion.items as |item|}}
-  {{item}} 
-{{/each}}
+{{#if favoriteQuestion.items}}
+  {{#each favoriteQuestion.items as |item|}}
+    <ul>
+      <li class=display-none></li>
+      <li class="forum-block glyphicon glyphicon-star"> "{{item}}"</li>
+      <li class="display-none"></li>
+    </ul>
+  {{/each}}
+  {{else}}
+    <h4>No questions have been favorited...</h4>
+{{/if}}

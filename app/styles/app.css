@@ -30,11 +30,3 @@ body {
 .move-button {
   margin-bottom: 10px;
 }
-
-.glyphicon {
-  color: crimson;
-}
-
-.glyphicon:hover {
-  color: red;
-}

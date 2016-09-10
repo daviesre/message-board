@@ -1,8 +1,7 @@
 <div class="forum-block title-fix">
-  <h1>Q: {{question.content}}</h1>
+  <h1>Q: {{question.content}} <button class="glyphicon glyphicon-star"{{action 'addToFavorites' question.content}}></button></h1>
   "{{question.note}}" <br>
   Username: {{question.author}}
-  <button class="btn btn-warning"{{action 'addToFavorites' question}}>Favorite</button>
 </div>
 
 
