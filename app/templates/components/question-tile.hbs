@@ -1,7 +1,7 @@
 <div class="forum-block title-fix">
   <h1>Q: {{question.content}} <button class="glyphicon glyphicon-star"{{action 'addToFavorites' question.content}}></button></h1>
   "{{question.note}}" <br>
-  Username: {{question.author}}
+  <span class="glyphicon glyphicon-user"> {{question.author}}</span>
 </div>
 
 
@@ -9,7 +9,7 @@
 <ul>
   <li class="display-none"></li>
   <li class="forum-block"><strong>A: {{answer.content}}</strong>
-<br> Username: {{answer.author}}</li>
+<br> <span class="glyphicon glyphicon-user"> {{answer.author}}</span></li>
   <li class="display-none"></li>
 </ul>
 {{/each}}
