@@ -20,7 +20,7 @@ body {
 
 .forum-block:hover {
   margin-left:5px;
-  background: rgb(255,255,245);
+  background: rgb(255,255,200);
 }
 
 .display-none {
@@ -29,4 +29,8 @@ body {
 
 .move-button {
   margin-bottom: 10px;
+}
+
+.glyphicon-star {
+  background-color:snow;
 }
