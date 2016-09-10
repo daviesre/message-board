@@ -1,15 +1,14 @@
 <div class="forum-block title-fix">
-  <h1>Q: {{question.content}} <button class="glyphicon glyphicon-star"{{action 'addToFavorites' question.content}}></button></h1>
+  <h1>Q: {{question.content}} <button class="glyphicon glyphicon-star"{{action 'addToFavorites' question.content}}>Star</button></h1>
   "{{question.note}}" <br>
-  <span class="glyphicon glyphicon-user"> {{question.author}}</span>
+  <span class="glyphicon glyphicon-user"></span><span> {{question.author}}</span>
 </div>
-
 
 {{#each question.answers as |answer|}}
 <ul>
   <li class="display-none"></li>
   <li class="forum-block"><strong>A: {{answer.content}}</strong>
-<br> <span class="glyphicon glyphicon-user"> {{answer.author}}</span></li>
+<br> <span class="glyphicon glyphicon-user"></span><span> {{answer.author}}</span></li>
   <li class="display-none"></li>
 </ul>
 {{/each}}

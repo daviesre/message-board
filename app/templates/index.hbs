@@ -7,7 +7,7 @@ On this site, you may ask any question you wish and receive answers from people 
 <ul class="container">
   {{#each model.questions as |question|}}
     <li class="display-none"></li>
-    <li class="forum-block">{{#link-to 'question' question.id}}{{question.content}}{{/link-to}} ({{question-popularity question}}) <br> <span class="glyphicon glyphicon-user"> {{question.author}}</span></li>
+    <li class="forum-block">{{#link-to 'question' question.id}}{{question.content}}{{/link-to}} ({{question-popularity question}}) <br> <span class="glyphicon glyphicon-user"></span><span> {{question.author}}</span></li>
     <li class="display-none"></li>
   {{/each}}
 </ul>
