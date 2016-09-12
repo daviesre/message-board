@@ -30,3 +30,7 @@ body {
 .move-button {
   margin-bottom: 10px;
 }
+
+.glyphicon-fire {
+  color: crimson;
+}

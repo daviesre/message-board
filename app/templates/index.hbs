@@ -8,7 +8,7 @@ On this site, you may ask any question you wish and receive answers from people 
   {{#each model.questions as |question|}}
 
     <li class="display-none"></li>
-    <li class="forum-block">{{#link-to 'question' question.id}}{{question.content}}{{/link-to}} ({{question.allAnswers}}{{question-popularity question}}) <br> <span class="glyphicon glyphicon-user"></span><span> {{question.author}}</span></li>
+    <li class="forum-block">{{question-popularity question}} {{#link-to 'question' question.id}}{{question.content}}{{/link-to}} ({{question.allAnswers}}{{answer-plurality question}}) <br> <span class="glyphicon glyphicon-user"></span><span> {{question.author}}</span></li>
     <li class="display-none"></li>
   {{/each}}
 </ul>
