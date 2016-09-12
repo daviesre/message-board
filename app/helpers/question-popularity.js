@@ -4,9 +4,9 @@ export function questionPopularity(params) {
   var question = params[0];
 
   if(question.get('answers').get('length') === 1) {
-    return question.get('answers').get('length') + " answer";
+    return " answer";
   } else {
-    return question.get('answers').get('length') + " answers";
+    return " answers";
   }
 }
 
